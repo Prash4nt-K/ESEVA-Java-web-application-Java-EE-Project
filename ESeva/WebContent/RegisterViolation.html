@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register a Violation</title>
+<link rel="stylesheet" type="text/css" href="css/homepage.css">
+<link rel="stylesheet" type="text/css" href="css/login.css">
+
+<script type="text/javascript">
+
+function validate()
+{
+	var vname = document.getElementById("vname");
+	var license_no = document.getElementById("dlno");
+	var place = document.getElementById("pov");
+	var v_type = document.getElementById("vt");
+	var v_coclor = document.getElementById("vc");
+	var v_no = document.getElementById("vn");
+	var amount = document.getElementById("fa");
+	var offence_des = document.getElementById("od");
+	var rep_off = document.getElementById("ro");
+	
+	if(vname.value == "")
+	{
+		alert("Please enter Violators name");	
+		return false;
+	}
+	else if(license_no.value == "")
+	{
+		alert("Please enter Driving License number");	
+		return false;
+	}
+	else if(place.value == "")
+	{
+		alert("Please enter Place of violation");	
+		return false;
+	}
+	else if(v_type.value == "")
+	{
+		alert("Please enter Vehicle type");	
+		return false;
+	}
+	else if(v_color.value == "")
+	{
+		alert("Please enter Vehicle colour");
+		return false;
+	}
+	else if(v_no.value == "")
+	{
+		alert("Please enter Vehicle Number");	
+		return false;
+	}
+	else if(amount.value == "")
+	{
+		alert("Please enter Fine amount");	
+		return false;
+	}
+	else if(offence_des.value == "")
+	{
+		alert("Please enter Offence Description");
+		return false;
+	}
+	else if(rep_off.value == "")
+	{
+		alert("Please select Repeated offender type");	
+		return false;
+	}
+	else
+	{
+		alert("Violaton registered successfully !");
+		return true;
+	}
+	
+}
+</script>
+</head>
+<body>
+
+
+
+<div><p></p></div>
+
+<div>
+	<div class="Space">
+  <a href="home.html"><img class="pho" src ="images/TrafficPolice.png"></a>
+  </div>
+  
+  <div class="navi">
+  <p></p>
+  <a href="home.html">Home</a>
+  <a href="IssueTicket.jsp">Issue a ticket</a>
+  <a href="AcceptPayment.jsp">Accept Payment</a> 
+  <a href="RegisterEmmergency.html">Register an Emmergency</a> 
+  <a href="TrafficInspectorSos.jsp">SOS</a>
+  </div> 
+  
+</div>
+
+<br>
+
+
+<div class="para">
+
+<h3 style="font-size:32px; border:3px solid black; padding:10px">Register a Violation/Violators</h3>
+<p>Please fill in the details below.</p>
+</div>
+
+<br>
+<form method="post" action="registerViolation">
+  <div class="mainn">
+  <br>
+    <label for="vname"><b>Violators Name :</b></label>
+    <input type="text" placeholder="Enter name" id="vname" name="vname"></input>
+    
+    <br>
+    <br>   
+    
+    <label for="dlno"><b>Driving License number :</b></label>
+    <input type="text" placeholder="Enter License Number" id="dlno" name="dlno">
+    
+    <br>
+    <br> 
+    
+    <label for="pov"><b>Place of Violation :</b></label>
+    <input type="text" placeholder="Enter Place" id="pov" name="pov">
+    
+    <br>
+    <br>
+    
+    <label for="vt"><b>Vehicle type :</b></label>
+    <input type="text" placeholder="Enter Vehicle Type" id="vt" name="vt">
+    
+    <br>
+    <br> 
+    
+    <label for="vc"><b>Vehicle colour :</b></label>
+    <input type="text" placeholder="Enter Vehicle Colour" id="vc" name="vc">
+    
+    <br>
+    <br> 
+    
+    <label for="vn"><b>Vehicle number :</b></label>
+    <input type="text" placeholder="Enter Vehicle Number" id="vn" name="vn">
+    
+    <br>
+    <br> 
+  
+	<label for="fa"><b>Fine Amount :</b></label>
+    <input type="text" placeholder="Enter Fine Amount" id="fa" name="fa">
+    
+    <br>
+    <br>   
+  
+   	<label for="od"><b>Offence Description :</b></label>
+    <input type="text" placeholder="Enter Discription" id="od" name="od">
+    
+    <br>
+    <br> 
+    
+    <label for="ro"><b>Repeated Offender :</b></label>
+    <input type="radio" id="ro" name="ro" value="Yes">
+    <label for="yes">Yes</label>
+    <input type="radio" id="ro" name="ro" value="No">
+    <label for="no">No</label><br>
+    
+    <br>
+    <br>  
+    
+   	<button onclick="return validate()" type="submit">Submit</button>
+  </div>
+  
+ 
+  </form>
+
+
+</body>
+</html>

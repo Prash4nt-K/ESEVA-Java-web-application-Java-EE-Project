@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register an Emmergency</title>
+<link rel="stylesheet" type="text/css" href="css/homepage.css">
+<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+
+
+<div><p></p></div>
+
+<div>
+	<div class="Space">
+  <a href="home.html"><img class="pho" src ="images/TrafficPolice.png"></a>
+  </div>
+  
+  <div class="navi">
+  <p></p>
+  <a href="home.html">Home</a>
+  <a href="RegisterViolation.html">Register a Traffic Violation/Violators</a>
+  <a href="IssueTicket.jsp">Issue a ticket</a>
+  <a href="AcceptPayment.jsp">Accept Payment</a> 
+  <a href="TrafficInspectorSos.jsp">SOS</a>
+  </div> 
+  
+</div>
+
+<div class="para">
+
+<h3 style="font-size:32px; border:3px solid black; padding:10px">Register an Emmergency</h3>
+<p>Please fill the details.</p>
+</div>
+
+
+<br>
+<form method="post" action="regEm">
+  <div class="mainn">
+  <br>
+    <label for="loc"><b>Location :</b></label>
+    <input type="text" placeholder="Enter Location" id="loc" name="loc"></input>
+    
+    <br><br>
+
+    <label for="acty"><b>Accedent type :</b></label>
+    <input type="text" placeholder="Accedent type" id="acty" name="acty">
+    
+    <br><br>  
+    
+    <label for="nopa"><b>Number of people affected :</b></label>
+    <input type="text" placeholder="Number of people" id="nopa" name="nopa"></input>
+    
+    <br><br>    
+    
+    <label for="pri"><b>Priority :</b></label>
+    <input type="text" placeholder="Enter Priority" id="pri" name="pri"></input>
+    
+    <br><br>
+  
+  <button type="submit">Register</button>
+  </div>
+  
+  </form>
+
+
+</body>
+</html>

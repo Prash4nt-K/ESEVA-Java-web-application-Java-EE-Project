@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Traffic Central Team</title>
+<link rel="stylesheet" type="text/css" href="css/homepage.css">
+<link rel="stylesheet" type="text/css" href="css/login.css">
+
+<script>
+
+function validate()
+{
+	var cid = document.getElementById("cid");
+	
+	if(cid.value == "")
+	{
+		alert("Please enter Challan Id");
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+    
+    
+</script>
+</head>
+<body>
+
+
+<div><p></p></div>
+
+<div>
+	<div class="Space">
+  <a href="home.html"><img class="pho" src ="images/TrafficPolice.png"></a>
+  </div>
+  
+  <div class="navi">
+  <p></p>
+  <a href="home.html">Home</a>
+  <a href="TrafficViolationsCentralTeam.jsp">Traffic Violations</a>
+  <a href="TrafficCentralTeam.jsp">SOS Emergency</a>
+  </div> 
+  
+</div>
+
+<div><p></p></div>
+<div class="para">
+<h3 style="font-size:32px; border:3px solid black; color:#008000; padding:10px">No fine collected recently !</h3>
+</div>
+
+    
+</body>
+</html>

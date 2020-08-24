@@ -1,0 +1,42 @@
+@charset "ISO-8859-1";
+
+.mainn {
+	text-align:left;
+	background-color:orange;
+	border:3px solid black;
+	float:left;
+	padding:10px;
+	margin:20px;
+}
+
+.para{
+	background-color:orange;
+	text-align:left;
+	margin:20px;
+	font-size:20px
+}
+
+.mainn label {
+	margin:10px 10px;
+	font-size:20px
+}
+
+
+.mainn button {
+	margin:10px 10px;
+	padding:3px 5px;
+	font-size:18px
+}
+
+.mainn2 button {
+	padding:3px 5px;
+	font-size:18px
+}
+
+.mainn2 {
+	text-align:left;
+	background-color:orange;
+	float:left;
+	padding:10px;
+	margin:10px;
+}
